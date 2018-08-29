@@ -1,4 +1,5 @@
 % Station Andøya, Clear sky modelled, integrated monthly doses. Last column (0) indicates that all data are model based, homogenized to real sky measurements.
+% The station is drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
 % All units except PAR: J/m^2. Units PAR: mol/m^2
 % Calculations and calibrations: Bjørn Johnsen, Statens strålevern (Norwegian Radiation Protection Authority
 % E-mail: Bjorn.Johnsen@nrpa.no

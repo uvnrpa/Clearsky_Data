@@ -1,4 +1,5 @@
 % Station Andøya, Clear sky modelled, integrated yearly doses. Last column (0) indicates that all data are model based, homogenized to real sky measurements.
+% The station is drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
 % All units except PAR: J/m^2. Units PAR: mol/m^2
 % Calculations and calibrations: Bjørn Johnsen, Statens strålevern (Norwegian Radiation Protection Authority
 % E-mail: Bjorn.Johnsen@nrpa.no
@@ -18,7 +19,7 @@
 %
 % Model: http://www.libradtran.org/doku.php
 % Ozone data: Priority: 1. Use O3 extracted from GUV measurements. 2. On days GUV_O3 is missing, use seasonal mean O3 Oslo, 1979-1990, ref. A. Dahlback. 3. Substitute dayvalues with EP-TOMS where existing (1996 <= year <2005), and Aura OMI data for year>2005
-%Ozone satellite data: Daily gridded Level-3 dataproducts. ftp://toms.gsfc.nasa.gov. 1996-2004: /pub/eptoms/data/ozone; 2005-> /pub/omi/data/ozone
+% Ozone satellite data: Daily gridded Level-3 dataproducts. ftp://toms.gsfc.nasa.gov. 1996-2004: /pub/eptoms/data/ozone; 2005-> /pub/omi/data/ozone
 % Modelled data corrected for climatological combined albedo and aerosol influence, based on clear sky UVI measurements
 % Dose products other than UVI corrected for the wavelength dependendent influence of seasonal albedo
 % Dose products homogenized with clear sky measurement data
