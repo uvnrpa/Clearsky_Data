@@ -1,8 +1,8 @@
 % Station Bergen, Clear sky modelled hourly (UTC hour +/- 30 minutes) irradiances. Last column (0)indicates that all data are model based, homogenized to real sky measurements.
-% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: bjorn.johnsen@nrpa.no)
+% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
 % Calculations and calibrations: Bjørn Johnsen, Statens strålevern (Norwegian Radiation Protection Authority
-% E-mail: Bjorn.Johnsen@nrpa.no
+% E-mail: Bjorn.Johnsen@dsa.no
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
