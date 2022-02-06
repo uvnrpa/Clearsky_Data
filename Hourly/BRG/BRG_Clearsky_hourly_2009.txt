@@ -1,25 +1,25 @@
 % Station Bergen, Clear sky modelled hourly (UTC hour +/- 30 minutes) irradiances. Last column (0)indicates that all data are model based, homogenized to real sky measurements.
-% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: Bjorn.Johnsen@dsa.no)
+% The station is drifted by DSA (former NRPA) - Norwegian Authority of Radiation and Nuclear Safety (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
-% Calculations and calibrations: Bjørn Johnsen, Statens strålevern (Norwegian Radiation Protection Authority
+% Calculations and calibrations: BjÃ¸rn Johnsen, Statens strÃ¥levern (Norwegian Radiation Protection Authority
 % E-mail: Bjorn.Johnsen@dsa.no
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
-% CIE1998: Erythema action spectrum: Commission Internationale de l’Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
+% CIE1998: Erythema action spectrum: Commission Internationale de lâ€™Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
 % UVB: ISO 21348 Definitions of Solar Irradiance Spectral Categories (280<=Wl<315 nm)
 % UVA: ISO 21348 Definitions of Solar Irradiance Spectral Categories (315<=Wl<400 nm)
 % NMSC: ISO/FDIS 28077:2016E Photocarcinogenesis Action Spectrum, (Non-Melanoma Skin Cancers, NMSC). CIE Central Bureau, Vienna
-% DNA: R. B. Setlow, The wavelengths in sunlight effective in producing skin cancer: a theoretical analysis", Proc. Nat. Acad. Sci., USA, 71 , No. 9,  pp. 3363-3366, 1974. Converted from effect per quantum to effect per energy. Downloaded from: Downloaded from: http://uv.biospherical.com/Version2/doserates/SetlowTUV.txt
+% DNA: R. B. Setlow, The wavelengths in sunlight effective in producing skin cancer: a theoretical analysis", Proc. Nat. Acad. Sci., USA, 71 , No. 9,  pp. 3363-3366, 1974. Converted from effect per quantum to effect per energy. Downloaded from: http://uv.biospherical.com/Version2/doserates/SetlowTUV.txt
 % VITD: CIE 174:2006, Action spectrum for the conversion of 7-DH7 to previtamin D3 in human skin
 % ANCHOVY: Action spectrum for damage to eggs and larvae of northern anchovy. Spectrum sugge and sted by: J.H. Hunter, J.H. Taylor, and H.G. Moser, "Effect of ultraviolet irradiation on eggs and larvae of the northern anchovy, Engraulis mordax, and the pacific mackerel, Scomber japonicus, during the embryonic stage", Photochemistry and Photobiology, 29, 325-338, 1979. Downloaded from: http://uv.biospherical.com/Version2/doserates/Hunter.txt
 % FLINTPLANT: Action spectrum for growth responses of plants. Action spectrum suggested by: S. D. Flint and M. M. Caldwell, "A biological spectral weighting function for ozone depletion research with higher plants", Physiologia Plantarum, 117,137-144, 2003. Downloaded from: http://uv.biospherical.com/Version2/doserates/Flint.txt
 % HEP: A. Brun & B. Hamre. Proposed action spectrum for Hematopoetic porfyri, HEP
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
-% Model: http://www.libradtran.org/doku.php
-% Ozone data: Priority: 1. Use O3 extracted from GUV measurements. 2. On days GUV_O3 is missing, use seasonal mean O3 Oslo, 1979-1990, ref. A. Dahlback. 3. Substitute dayvalues with EP-TOMS where existing (1996 <= year <2005), and Aura OMI data for year>2005
-%Ozone satellite data: Daily gridded Level-3 dataproducts. ftp://toms.gsfc.nasa.gov. 1996-2004: /pub/eptoms/data/ozone; 2005-> /pub/omi/data/ozone
+% Radiative transfer model: libRadtran release 1.7. http://www.libradtran.org/doku.php. C. Emde, R. Buras-Schnell, A. Kylling, B. Mayer, J. Gasteiger, U. Hamann, J. Kylling, B. Richter, C. Pause, T. Dowling, and L. Bugliaro. The libradtran software package for radiative transfer calculations (version 2.0.1). Geoscientific Model Development, 9(5):1647-1672, 2016
+% Ozone data: EP Toms and AURA OMI. Gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
+% Ozone satellite data: Daily gridded Level-3 dataproducts (L3_ozone_epc_YYYYMMDD.txt, L3_ozone_omi_YYYYMMDD.txt). 1996-2004: ftp://toms.gsfc.nasa.gov. 2004->: https://ozonewatch.gsfc.nasa.gov/data/omi
 % Modelled irradiance data corrected for climatological combined albedo and aerosol influence, based on clear sky UVI measurements
 % Dose products other than UVI corrected for the wavelength dependendent influence of seasonal albedo
 % Dose products homogenized with clear sky measurement data
@@ -1599,7 +1599,7 @@
 2009	3	7	66	11	  2.0042E-02	  2.0304E-02	  1.0724E-01	  1.6445E+01	  3.7235E-02	  4.4898E-03	  1.9107E-02	  6.3001E-04	  2.8813E-01	  4.4085E+01	  6.1375E-04	0.00
 2009	3	7	66	12	  2.1397E-02	  2.1671E-02	  1.1726E-01	  1.7166E+01	  4.0074E-02	  4.8973E-03	  2.1004E-02	  6.7980E-04	  3.0149E-01	  4.5860E+01	  6.3797E-04	0.00
 2009	3	7	66	13	  1.8974E-02	  1.9227E-02	  9.9441E-02	  1.5862E+01	  3.5012E-02	  4.1760E-03	  1.7644E-02	  5.9106E-04	  2.7735E-01	  4.2638E+01	  5.9396E-04	0.00
-2009	3	7	66	14	  1.3778E-02	  1.3982E-02	  6.3109E-02	  1.2770E+01	  2.4411E-02	  2.7518E-03	  1.1011E-02	  4.0604E-04	  2.2101E-01	  3.4814E+01	  4.8650E-04	0.00
+2009	3	7	66	14	  1.3778E-02	  1.3982E-02	  6.3109E-02	  1.2770E+01	  2.4411E-02	  2.7517E-03	  1.1011E-02	  4.0604E-04	  2.2101E-01	  3.4814E+01	  4.8650E-04	0.00
 2009	3	7	66	15	  7.8621E-03	  7.9985E-03	  2.7070E-02	  8.5223E+00	  1.2962E-02	  1.3679E-03	  4.7593E-03	  2.0836E-04	  1.4552E-01	  2.3510E+01	  3.2928E-04	0.00
 2009	3	7	66	16	  3.1344E-03	  3.2006E-03	  6.5745E-03	  4.1103E+00	  4.6591E-03	  4.8064E-04	  1.2813E-03	  6.9088E-05	  6.9232E-02	  1.0984E+01	  1.5160E-04	0.00
 2009	3	7	66	17	  4.6542E-04	  4.7670E-04	  7.9273E-04	  7.0376E-01	  6.4373E-04	  7.1310E-05	  1.6806E-04	  8.3636E-06	  1.1685E-02	  1.6250E+00	  2.0663E-05	0.00
@@ -4060,7 +4060,7 @@
 2009	6	18	169	0	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	0.00
 2009	6	18	169	1	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	0.00
 2009	6	18	169	2	  8.6710E-06	  8.8627E-06	  2.3503E-05	  1.2358E-02	  1.2941E-05	  1.6727E-06	  4.9308E-06	  1.7567E-07	  2.0157E-04	  2.5024E-02	  2.8096E-07	0.00
-2009	6	18	169	3	  7.7525E-04	  7.9326E-04	  1.4607E-03	  1.1450E+00	  1.1006E-03	  1.2644E-04	  3.1247E-04	  1.5004E-05	  1.8749E-02	  2.8826E+00	  3.7693E-05	0.00
+2009	6	18	169	3	  7.7525E-04	  7.9327E-04	  1.4607E-03	  1.1450E+00	  1.1006E-03	  1.2644E-04	  3.1247E-04	  1.5004E-05	  1.8749E-02	  2.8826E+00	  3.7693E-05	0.00
 2009	6	18	169	4	  3.2967E-03	  3.3625E-03	  8.1171E-03	  4.1779E+00	  5.0574E-03	  5.4122E-04	  1.5565E-03	  7.7580E-05	  6.9391E-02	  1.1975E+01	  1.6798E-04	0.00
 2009	6	18	169	5	  8.8296E-03	  8.9692E-03	  3.6303E-02	  8.9212E+00	  1.5204E-02	  1.7062E-03	  6.4118E-03	  2.5118E-04	  1.5069E-01	  2.6184E+01	  3.7149E-04	0.00
 2009	6	18	169	6	  1.9096E-02	  1.9333E-02	  1.0772E-01	  1.5172E+01	  3.6158E-02	  4.6090E-03	  1.9678E-02	  6.1875E-04	  2.6235E-01	  4.3402E+01	  6.1222E-04	0.00
@@ -6607,7 +6607,7 @@
 2009	10	2	275	3	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	0.00
 2009	10	2	275	4	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	0.00
 2009	10	2	275	5	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	0.00
-2009	10	2	275	6	  3.8666E-04	  3.9480E-04	  9.7115E-04	  5.1609E-01	  5.8434E-04	  7.5657E-05	  2.1195E-04	  8.4938E-06	  8.5301E-03	  1.2807E+00	  1.6696E-05	0.00
+2009	10	2	275	6	  3.8666E-04	  3.9480E-04	  9.7115E-04	  5.1609E-01	  5.8434E-04	  7.5657E-05	  2.1195E-04	  8.4938E-06	  8.5300E-03	  1.2807E+00	  1.6696E-05	0.00
 2009	10	2	275	7	  3.2207E-03	  3.2784E-03	  1.0344E-02	  3.6541E+00	  5.2369E-03	  6.0718E-04	  1.9720E-03	  8.3653E-05	  6.1328E-02	  1.0415E+01	  1.4643E-04	0.00
 2009	10	2	275	8	  8.9499E-03	  9.0751E-03	  4.3723E-02	  7.9972E+00	  1.6209E-02	  1.9785E-03	  7.9163E-03	  2.7349E-04	  1.3678E-01	  2.3467E+01	  3.3414E-04	0.00
 2009	10	2	275	9	  1.6911E-02	  1.7104E-02	  1.0177E-01	  1.2400E+01	  3.2850E-02	  4.4535E-03	  1.9127E-02	  5.6635E-04	  2.1641E-01	  3.5805E+01	  5.0776E-04	0.00
@@ -7858,7 +7858,7 @@
 2009	11	23	327	6	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	0.00
 2009	11	23	327	7	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	  0.0000E+00	0.00
 2009	11	23	327	8	  8.9243E-05	  9.1146E-05	  2.4942E-04	  1.2076E-01	  1.3556E-04	  1.8328E-05	  5.3956E-05	  1.9042E-06	  1.9954E-03	  2.5905E-01	  3.0920E-06	0.00
-2009	11	23	327	9	  1.1972E-03	  1.2231E-03	  2.6308E-03	  1.6256E+00	  1.7721E-03	  2.1014E-04	  5.6201E-04	  2.5604E-05	  2.7014E-02	  4.1486E+00	  5.5369E-05	0.00
+2009	11	23	327	9	  1.1972E-03	  1.2231E-03	  2.6307E-03	  1.6256E+00	  1.7721E-03	  2.1014E-04	  5.6201E-04	  2.5604E-05	  2.7014E-02	  4.1486E+00	  5.5369E-05	0.00
 2009	11	23	327	10	  2.7383E-03	  2.7922E-03	  6.9758E-03	  3.3896E+00	  4.2360E-03	  4.7493E-04	  1.3832E-03	  6.5168E-05	  5.6819E-02	  9.3396E+00	  1.2989E-04	0.00
 2009	11	23	327	11	  3.7755E-03	  3.8455E-03	  1.1031E-02	  4.4097E+00	  6.0197E-03	  6.6834E-04	  2.0924E-03	  9.5061E-05	  7.4230E-02	  1.2436E+01	  1.7476E-04	0.00
 2009	11	23	327	12	  3.6886E-03	  3.7574E-03	  1.0661E-02	  4.3281E+00	  5.8673E-03	  6.5164E-04	  2.0285E-03	  9.2487E-05	  7.2832E-02	  1.2188E+01	  1.7118E-04	0.00

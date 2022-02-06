@@ -1,12 +1,12 @@
 % Station Finse, Clear sky modelled, integrated monthly doses. Last column (0) indicates that all data are model based, homogenized to real sky measurements.
-% The station is drifted by NRPA - Norwegian Radiation Protection Authority (email: Bjorn.Johnsen@dsa.no)
+% The station is drifted by DSA (former NRPA) - Norwegian Authority of Radiation and Nuclear Safety (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: J/m^2. Units PAR: mol/m^2
-% Calculations and calibrations: Bjørn Johnsen, Statens strålevern (Norwegian Radiation Protection Authority
+% Calculations and calibrations: BjÃ¸rn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
 % E-mail: Bjorn.Johnsen@dsa.no
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
-% CIE1998: Erythema action spectrum: Commission Internationale de l’Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
+% CIE1998: Erythema action spectrum: Commission Internationale de lâ€™Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
 % UVB: ISO 21348 Definitions of Solar Irradiance Spectral Categories (280<=Wl<315 nm)
 % UVA: ISO 21348 Definitions of Solar Irradiance Spectral Categories (315<=Wl<400 nm)
 % NMSC: ISO/FDIS 28077:2016E Photocarcinogenesis Action Spectrum, (Non-Melanoma Skin Cancers, NMSC). CIE Central Bureau, Vienna
@@ -17,9 +17,9 @@
 % HEP: A. Brun & B. Hamre. Proposed action spectrum for Hematopoetic porfyri, HEP
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
-% Model: http://www.libradtran.org/doku.php
-% Ozone data: Priority: 1. Use O3 extracted from GUV measurements. 2. On days GUV_O3 is missing, use seasonal mean O3 Oslo, 1979-1990, ref. A. Dahlback. 3. Substitute dayvalues with EP-TOMS where existing (1996 <= year <2005), and Aura OMI data for year>2005
-%Ozone satellite data: Daily gridded Level-3 dataproducts. ftp://toms.gsfc.nasa.gov. 1996-2004: /pub/eptoms/data/ozone; 2005-> /pub/omi/data/ozone
+% Radiative transfer model: libRadtran release 1.7. http://www.libradtran.org/doku.php. C. Emde, R. Buras-Schnell, A. Kylling, B. Mayer, J. Gasteiger, U. Hamann, J. Kylling, B. Richter, C. Pause, T. Dowling, and L. Bugliaro. The libradtran software package for radiative transfer calculations (version 2.0.1). Geoscientific Model Development, 9(5):1647-1672, 2016
+% Ozone data: EP Toms and AURA OMI. Gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
+% Ozone satellite data: Daily gridded Level-3 dataproducts (L3_ozone_epc_YYYYMMDD.txt, L3_ozone_omi_YYYYMMDD.txt). 1996-2004: ftp://toms.gsfc.nasa.gov. 2004->: https://ozonewatch.gsfc.nasa.gov/data/omi
 % Modelled data corrected for climatological combined albedo and aerosol influence, based on clear sky UVI measurements
 % Dose products other than UVI corrected for the wavelength dependendent influence of seasonal albedo
 % Dose products homogenized with clear sky measurement data
@@ -301,15 +301,39 @@
 2018	10	  1.3988E+04	  1.4161E+04	  7.8113E+04	  1.0598E+07	  2.6537E+04	  3.4781E+03	  1.4656E+04	  4.4859E+02	  1.9044E+05	  2.7182E+07	  3.7727E+02	0.000
 2018	11	  4.0307E+03	  4.0969E+03	  1.5420E+04	  3.9100E+06	  6.8365E+03	  7.9263E+02	  2.8650E+03	  1.0937E+02	  7.0420E+04	  9.1653E+06	  1.2484E+02	0.000
 2018	12	  1.4610E+03	  1.4908E+03	  3.5878E+03	  1.7461E+06	  2.2290E+03	  2.5386E+02	  7.3658E+02	  3.2805E+01	  3.1008E+04	  3.8093E+06	  5.0153E+01	0.000
-2019	1	  2.4249E+03	  2.4760E+03	  5.2769E+03	  2.9964E+06	  3.6191E+03	  3.7756E+02	  1.0434E+03	  5.2629E+01	  5.3071E+04	  6.7457E+06	  8.9972E+01	0.000
-2019	2	  9.7263E+03	  9.8725E+03	  4.3380E+04	  8.6422E+06	  1.7171E+04	  2.0001E+03	  7.8916E+03	  2.7907E+02	  1.5701E+05	  2.0362E+07	  2.7807E+02	0.000
-2019	3	  3.2599E+04	  3.3001E+04	  1.8204E+05	  2.3813E+07	  6.1940E+04	  7.9987E+03	  3.4140E+04	  1.0363E+03	  4.4088E+05	  5.4977E+07	  7.4666E+02	0.000
-2019	4	  7.8686E+04	  7.9380E+04	  5.3378E+05	  4.1377E+07	  1.6304E+05	  2.6335E+04	  1.1093E+05	  2.8140E+03	  7.9694E+05	  9.3382E+07	  1.2632E+03	0.000
-2019	5	  1.0925E+05	  1.1017E+05	  7.5210E+05	  5.5372E+07	  2.2837E+05	  3.8481E+04	  1.5946E+05	  3.9716E+03	  1.0641E+06	  1.2620E+08	  1.7054E+03	0.000
-2019	6	  1.2507E+05	  1.2594E+05	  8.9762E+05	  5.4027E+07	  2.6916E+05	  5.2044E+04	  2.0354E+05	  4.7750E+03	  1.0487E+06	  1.2967E+08	  1.7694E+03	0.000
-2019	7	  1.1264E+05	  1.1340E+05	  8.1109E+05	  4.8423E+07	  2.4318E+05	  4.8747E+04	  1.8683E+05	  4.3515E+03	  9.2596E+05	  1.2405E+08	  1.7129E+03	0.000
-2019	8	  7.6924E+04	  7.7492E+04	  5.4917E+05	  3.6269E+07	  1.6441E+05	  3.1233E+04	  1.2303E+05	  2.9292E+03	  6.7668E+05	  9.7386E+07	  1.3575E+03	0.000
-2019	9	  3.8749E+04	  3.9084E+04	  2.6657E+05	  2.1347E+07	  8.0681E+04	  1.3697E+04	  5.6421E+04	  1.4191E+03	  3.8873E+05	  5.8580E+07	  8.2146E+02	0.000
-2019	10	  1.4725E+04	  1.4898E+04	  8.5552E+04	  1.0621E+07	  2.8369E+04	  3.8532E+03	  1.6293E+04	  4.8221E+02	  1.9187E+05	  2.7249E+07	  3.7858E+02	0.000
-2019	11	  4.0669E+03	  4.1332E+03	  1.5652E+04	  3.9141E+06	  6.9154E+03	  8.0606E+02	  2.9097E+03	  1.1097E+02	  7.0558E+04	  9.1847E+06	  1.2521E+02	0.000
-2019	12	  1.5010E+03	  1.5308E+03	  3.9600E+03	  1.7479E+06	  2.3245E+03	  2.7273E+02	  8.1135E+02	  3.4625E+01	  3.1097E+04	  3.8146E+06	  5.0254E+01	0.000
+2019	1	  2.4584E+03	  2.5096E+03	  5.5625E+03	  3.0188E+06	  3.6966E+03	  3.8980E+02	  1.0960E+03	  5.4220E+01	  5.3223E+04	  6.9059E+06	  9.2396E+01	0.000
+2019	2	  9.5848E+03	  9.7309E+03	  4.2019E+04	  8.6864E+06	  1.6832E+04	  1.9571E+03	  7.6551E+03	  2.7319E+02	  1.5675E+05	  2.0755E+07	  2.8386E+02	0.000
+2019	3	  3.2525E+04	  3.2927E+04	  1.8136E+05	  2.3944E+07	  6.1755E+04	  7.9876E+03	  3.4024E+04	  1.0346E+03	  4.4104E+05	  5.6013E+07	  7.6220E+02	0.000
+2019	4	  7.8478E+04	  7.9172E+04	  5.3162E+05	  4.1535E+07	  1.6251E+05	  2.6310E+04	  1.1057E+05	  2.8077E+03	  7.9693E+05	  9.4633E+07	  1.2819E+03	0.000
+2019	5	  1.0861E+05	  1.0953E+05	  7.4721E+05	  5.5438E+07	  2.2684E+05	  3.8007E+04	  1.5798E+05	  3.9436E+03	  1.0632E+06	  1.2675E+08	  1.7136E+03	0.000
+2019	6	  1.2496E+05	  1.2583E+05	  8.9672E+05	  5.4042E+07	  2.6889E+05	  5.1980E+04	  2.0330E+05	  4.7705E+03	  1.0486E+06	  1.2981E+08	  1.7715E+03	0.000
+2019	7	  1.1360E+05	  1.1436E+05	  8.1863E+05	  4.8486E+07	  2.4549E+05	  4.9551E+04	  1.8920E+05	  4.3973E+03	  9.2766E+05	  1.2460E+08	  1.7217E+03	0.000
+2019	8	  7.7150E+04	  7.7718E+04	  5.5110E+05	  3.6287E+07	  1.6497E+05	  3.1406E+04	  1.2359E+05	  2.9400E+03	  6.7709E+05	  9.7549E+07	  1.3601E+03	0.000
+2019	9	  3.8683E+04	  3.9018E+04	  2.6601E+05	  2.1344E+07	  8.0520E+04	  1.3649E+04	  5.6260E+04	  1.4161E+03	  3.8862E+05	  5.8562E+07	  8.2117E+02	0.000
+2019	10	  1.4689E+04	  1.4862E+04	  8.5197E+04	  1.0639E+07	  2.8279E+04	  3.8384E+03	  1.6219E+04	  4.8079E+02	  1.9184E+05	  2.7415E+07	  3.8113E+02	0.000
+2019	11	  4.0411E+03	  4.1074E+03	  1.5390E+04	  3.9373E+06	  6.8520E+03	  7.9781E+02	  2.8618E+03	  1.1000E+02	  7.0557E+04	  9.3758E+06	  1.2808E+02	0.000
+2019	12	  1.4812E+03	  1.5110E+03	  3.7907E+03	  1.7578E+06	  2.2781E+03	  2.6497E+02	  7.7793E+02	  3.3794E+01	  3.1067E+04	  3.8927E+06	  5.1365E+01	0.000
+2020	1	  2.8425E+03	  2.8941E+03	  9.0725E+03	  3.0397E+06	  4.6057E+03	  5.3534E+02	  1.7555E+03	  7.1448E+01	  5.4286E+04	  6.9670E+06	  9.3794E+01	0.000
+2020	2	  9.6632E+03	  9.8176E+03	  3.9256E+04	  9.1574E+06	  1.6596E+04	  1.8268E+03	  6.9688E+03	  2.6728E+02	  1.6492E+05	  2.1779E+07	  2.9759E+02	0.000
+2020	3	  3.2345E+04	  3.2755E+04	  1.7619E+05	  2.4448E+07	  6.0829E+04	  7.6529E+03	  3.2622E+04	  1.0150E+03	  4.4983E+05	  5.6822E+07	  7.7191E+02	0.000
+2020	4	  8.5766E+04	  8.6471E+04	  5.9671E+05	  4.2101E+07	  1.8022E+05	  3.0402E+04	  1.2671E+05	  3.1265E+03	  8.1819E+05	  9.5312E+07	  1.2911E+03	0.000
+2020	5	  1.1408E+05	  1.1500E+05	  7.9738E+05	  5.5548E+07	  2.4032E+05	  4.1171E+04	  1.7048E+05	  4.1865E+03	  1.0750E+06	  1.2613E+08	  1.7046E+03	0.000
+2020	6	  1.3351E+05	  1.3439E+05	  9.6288E+05	  5.3802E+07	  2.8951E+05	  5.8886E+04	  2.2393E+05	  5.1649E+03	  1.0592E+06	  1.2834E+08	  1.7506E+03	0.000
+2020	7	  1.0696E+05	  1.0772E+05	  7.6762E+05	  4.8015E+07	  2.2976E+05	  4.4445E+04	  1.7376E+05	  4.0940E+03	  9.1124E+05	  1.2301E+08	  1.6979E+03	0.000
+2020	8	  7.9863E+04	  8.0425E+04	  5.7329E+05	  3.5870E+07	  1.7178E+05	  3.3932E+04	  1.3095E+05	  3.0740E+03	  6.7470E+05	  9.6428E+07	  1.3452E+03	0.000
+2020	9	  3.8483E+04	  3.8811E+04	  2.6552E+05	  2.0890E+07	  8.0310E+04	  1.3772E+04	  5.6489E+04	  1.4134E+03	  3.8184E+05	  5.7014E+07	  7.9895E+02	0.000
+2020	10	  1.4092E+04	  1.4261E+04	  8.0686E+04	  1.0317E+07	  2.7007E+04	  3.6304E+03	  1.5317E+04	  4.5792E+02	  1.8641E+05	  2.6301E+07	  3.6495E+02	0.000
+2020	11	  3.8760E+03	  3.9400E+03	  1.4637E+04	  3.7947E+06	  6.5548E+03	  7.6342E+02	  2.7305E+03	  1.0488E+02	  6.8090E+04	  8.9654E+06	  1.2223E+02	0.000
+2020	12	  1.5303E+03	  1.5599E+03	  4.2049E+03	  1.7449E+06	  2.3988E+03	  2.8618E+02	  8.6511E+02	  3.6232E+01	  3.1011E+04	  3.8605E+06	  5.1095E+01	0.000
+2021	1	  2.4908E+03	  2.5420E+03	  5.8007E+03	  3.0226E+06	  3.7703E+03	  4.0231E+02	  1.1458E+03	  5.5661E+01	  5.3339E+04	  6.9261E+06	  9.2768E+01	0.000
+2021	2	  8.8217E+03	  8.9674E+03	  3.4011E+04	  8.6598E+06	  1.4935E+04	  1.6194E+03	  6.0438E+03	  2.3862E+02	  1.5519E+05	  2.0682E+07	  2.8243E+02	0.000
+2021	3	  3.3349E+04	  3.3751E+04	  1.9074E+05	  2.3987E+07	  6.3798E+04	  8.2361E+03	  3.5587E+04	  1.0718E+03	  4.4298E+05	  5.6135E+07	  7.6460E+02	0.000
+2021	4	  6.9506E+04	  7.0198E+04	  4.5029E+05	  4.1357E+07	  1.4026E+05	  2.0617E+04	  8.9276E+04	  2.3992E+03	  7.8140E+05	  9.4072E+07	  1.2721E+03	0.000
+2021	5	  1.1499E+05	  1.1591E+05	  8.0508E+05	  5.5410E+07	  2.4266E+05	  4.1987E+04	  1.7300E+05	  4.2315E+03	  1.0740E+06	  1.2590E+08	  1.7019E+03	0.000
+2021	6	  1.3515E+05	  1.3602E+05	  9.7538E+05	  5.3921E+07	  2.9333E+05	  5.9926E+04	  2.2739E+05	  5.2341E+03	  1.0647E+06	  1.2805E+08	  1.7455E+03	0.000
+2021	7	  1.1799E+05	  1.1876E+05	  8.5300E+05	  4.8398E+07	  2.5607E+05	  5.2922E+04	  1.9962E+05	  4.5969E+03	  9.3459E+05	  1.2336E+08	  1.7027E+03	0.000
+2021	8	  7.6096E+04	  7.6664E+04	  5.4340E+05	  3.6255E+07	  1.6247E+05	  3.0485E+04	  1.2103E+05	  2.8905E+03	  6.7534E+05	  9.7284E+07	  1.3558E+03	0.000
+2021	9	  4.1980E+04	  4.2316E+04	  2.9401E+05	  2.1361E+07	  8.8599E+04	  1.6037E+04	  6.4253E+04	  1.5684E+03	  3.9411E+05	  5.8370E+07	  8.1856E+02	0.000
+2021	10	  1.5434E+04	  1.5607E+04	  9.2716E+04	  1.0660E+07	  3.0139E+04	  4.2269E+03	  1.7901E+04	  5.1486E+02	  1.9326E+05	  2.7468E+07	  3.8218E+02	0.000
+2021	11	  3.8672E+03	  3.9333E+03	  1.3759E+04	  3.9271E+06	  6.4366E+03	  7.2757E+02	  2.5477E+03	  1.0216E+02	  7.0101E+04	  9.3383E+06	  1.2733E+02	0.000
+2021	12	  1.4365E+03	  1.4663E+03	  3.3972E+03	  1.7549E+06	  2.1730E+03	  2.4626E+02	  7.0068E+02	  3.1778E+01	  3.0948E+04	  3.8812E+06	  5.1144E+01	0.000
