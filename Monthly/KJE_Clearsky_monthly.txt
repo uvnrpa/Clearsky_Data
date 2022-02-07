@@ -1,0 +1,63 @@
+% Station Kjeller, Clear sky modelled, integrated monthly doses. Last column (0) indicates that all data are model based, homogenized to real sky measurements.
+% The station is drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
+% All units except PAR: J/m^2. Units PAR: mol/m^2
+% Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
+% E-mail: Bjorn.Johnsen@dsa.no
+%
+% Actionspectra:
+% CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
+% CIE1998: Erythema action spectrum: Commission Internationale de l’Eclairage (1998) Erythema Reference Action Spectrum and Standard Erythema Dose. CIE S007E-1998. CIE Central Bureau, Vienna, Austria
+% UVB: ISO 21348 Definitions of Solar Irradiance Spectral Categories (280<=Wl<315 nm)
+% UVA: ISO 21348 Definitions of Solar Irradiance Spectral Categories (315<=Wl<400 nm)
+% NMSC: ISO/FDIS 28077:2016E Photocarcinogenesis Action Spectrum, (Non-Melanoma Skin Cancers, NMSC). CIE Central Bureau, Vienna
+% DNA: R. B. Setlow, The wavelengths in sunlight effective in producing skin cancer: a theoretical analysis", Proc. Nat. Acad. Sci., USA, 71 , No. 9,  pp. 3363-3366, 1974. Converted from effect per quantum to effect per energy. Downloaded from: Downloaded from: http://uv.biospherical.com/Version2/doserates/SetlowTUV.txt
+% VITD: CIE 174:2006, Action spectrum for the conversion of 7-DH7 to previtamin D3 in human skin
+% ANCHOVY: Action spectrum for damage to eggs and larvae of northern anchovy. Spectrum sugge and sted by: J.H. Hunter, J.H. Taylor, and H.G. Moser, "Effect of ultraviolet irradiation on eggs and larvae of the northern anchovy, Engraulis mordax, and the pacific mackerel, Scomber japonicus, during the embryonic stage", Photochemistry and Photobiology, 29, 325-338, 1979. Downloaded from: http://uv.biospherical.com/Version2/doserates/Hunter.txt
+% FLINTPLANT: Action spectrum for growth responses of plants. Action spectrum suggested by: S. D. Flint and M. M. Caldwell, "A biological spectral weighting function for ozone depletion research with higher plants", Physiologia Plantarum, 117,137-144, 2003. Downloaded from: http://uv.biospherical.com/Version2/doserates/Flint.txt
+% HEP: A. Brun & B. Hamre. Proposed action spectrum for Hematopoetic porfyri, HEP
+% PAR: Photosynthetic active radiation, 400-700 nm
+%
+% Radiative transfer model: libRadtran release 1.7. http://www.libradtran.org/doku.php. C. Emde, R. Buras-Schnell, A. Kylling, B. Mayer, J. Gasteiger, U. Hamann, J. Kylling, B. Richter, C. Pause, T. Dowling, and L. Bugliaro. The libradtran software package for radiative transfer calculations (version 2.0.1). Geoscientific Model Development, 9(5):1647-1672, 2016
+% Ozone data: EP Toms and AURA OMI. Gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
+% Ozone satellite data: Daily gridded Level-3 dataproducts (L3_ozone_epc_YYYYMMDD.txt, L3_ozone_omi_YYYYMMDD.txt). 1996-2004: ftp://toms.gsfc.nasa.gov. 2004->: https://ozonewatch.gsfc.nasa.gov/data/omi
+% Modelled data corrected for climatological combined albedo and aerosol influence, based on clear sky UVI measurements
+% Dose products other than UVI corrected for the wavelength dependendent influence of seasonal albedo
+% Dose products homogenized with clear sky measurement data
+%
+% Columns: Year	Month	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
+2019	1	  1.7434E+03	  1.7791E+03	  4.0905E+03	  2.1845E+06	  2.6413E+03	  2.8372E+02	  8.0236E+02	  3.9434E+01	  3.7418E+04	  5.4879E+06	  7.4690E+01	0.000
+2019	2	  6.4246E+03	  6.5203E+03	  2.9099E+04	  5.8929E+06	  1.1389E+04	  1.3732E+03	  5.3647E+03	  1.8747E+02	  1.0338E+05	  1.5373E+07	  2.1327E+02	0.000
+2019	3	  2.0911E+04	  2.1167E+04	  1.1792E+05	  1.6016E+07	  3.9836E+04	  5.3622E+03	  2.2445E+04	  6.7776E+02	  2.8265E+05	  4.2653E+07	  5.9270E+02	0.000
+2019	4	  5.0561E+04	  5.0999E+04	  3.4565E+05	  2.7918E+07	  1.0511E+05	  1.8009E+04	  7.3514E+04	  1.8512E+03	  5.0837E+05	  7.5312E+07	  1.0495E+03	0.000
+2019	5	  7.7021E+04	  7.7653E+04	  5.3603E+05	  4.0386E+07	  1.6177E+05	  2.8739E+04	  1.1607E+05	  2.8640E+03	  7.3950E+05	  1.0834E+08	  1.5058E+03	0.000
+2019	6	  1.0311E+05	  1.0381E+05	  7.4290E+05	  4.5126E+07	  2.2252E+05	  4.4821E+04	  1.7135E+05	  3.9953E+03	  8.5170E+05	  1.2022E+08	  1.6710E+03	0.000
+2019	7	  1.0079E+05	  1.0147E+05	  7.2670E+05	  4.3684E+07	  2.1775E+05	  4.4237E+04	  1.6829E+05	  3.9138E+03	  8.2564E+05	  1.1679E+08	  1.6251E+03	0.000
+2019	8	  7.1816E+04	  7.2339E+04	  5.1408E+05	  3.3558E+07	  1.5378E+05	  2.9511E+04	  1.1573E+05	  2.7450E+03	  6.2548E+05	  9.0968E+07	  1.2702E+03	0.000
+2019	9	  3.6222E+04	  3.6530E+04	  2.5046E+05	  1.9693E+07	  7.5654E+04	  1.3023E+04	  5.3365E+04	  1.3335E+03	  3.5849E+05	  5.4465E+07	  7.6478E+02	0.000
+2019	10	  1.2296E+04	  1.2438E+04	  7.2579E+04	  9.0293E+06	  2.3815E+04	  3.3285E+03	  1.3966E+04	  4.0914E+02	  1.5854E+05	  2.5428E+07	  3.5886E+02	0.000
+2019	11	  3.0016E+03	  3.0494E+03	  1.2069E+04	  2.9795E+06	  5.1585E+03	  6.2415E+02	  2.2549E+03	  8.4557E+01	  5.1284E+04	  8.1038E+06	  1.1331E+02	0.000
+2019	12	  1.1118E+03	  1.1335E+03	  3.0147E+03	  1.3333E+06	  1.7347E+03	  2.0668E+02	  6.1489E+02	  2.6425E+01	  2.2823E+04	  3.3119E+06	  4.4759E+01	0.000
+2020	1	  1.9443E+03	  1.9803E+03	  5.9367E+03	  2.2002E+06	  3.1163E+03	  3.5676E+02	  1.1420E+03	  4.8540E+01	  3.8000E+04	  5.5571E+06	  7.6042E+01	0.000
+2020	2	  6.4530E+03	  6.5541E+03	  2.7141E+04	  6.2213E+06	  1.1181E+04	  1.2719E+03	  4.8605E+03	  1.8271E+02	  1.0866E+05	  1.6245E+07	  2.2532E+02	0.000
+2020	3	  2.0562E+04	  2.0823E+04	  1.1238E+05	  1.6380E+07	  3.8670E+04	  5.0285E+03	  2.1038E+04	  6.5512E+02	  2.8773E+05	  4.3635E+07	  6.0587E+02	0.000
+2020	4	  5.4777E+04	  5.5222E+04	  3.8347E+05	  2.8392E+07	  1.1533E+05	  2.0444E+04	  8.2964E+04	  2.0391E+03	  5.2179E+05	  7.6604E+07	  1.0685E+03	0.000
+2020	5	  8.0198E+04	  8.0835E+04	  5.6469E+05	  4.0740E+07	  1.6947E+05	  3.0559E+04	  1.2318E+05	  3.0058E+03	  7.4964E+05	  1.0925E+08	  1.5191E+03	0.000
+2020	6	  1.0994E+05	  1.1065E+05	  7.9531E+05	  4.5256E+07	  2.3884E+05	  5.0398E+04	  1.8773E+05	  4.3126E+03	  8.6383E+05	  1.2054E+08	  1.6764E+03	0.000
+2020	7	  9.6500E+04	  9.7178E+04	  6.9421E+05	  4.3402E+07	  2.0764E+05	  4.0911E+04	  1.5838E+05	  3.7185E+03	  8.1492E+05	  1.1608E+08	  1.6148E+03	0.000
+2020	8	  7.4363E+04	  7.4881E+04	  5.3458E+05	  3.3198E+07	  1.6014E+05	  3.1899E+04	  1.2259E+05	  2.8705E+03	  6.2368E+05	  9.0034E+07	  1.2580E+03	0.000
+2020	9	  3.6016E+04	  3.6317E+04	  2.5021E+05	  1.9286E+07	  7.5441E+04	  1.3121E+04	  5.3591E+04	  1.3311E+03	  3.5189E+05	  5.3377E+07	  7.4987E+02	0.000
+2020	10	  1.1705E+04	  1.1842E+04	  6.8112E+04	  8.7424E+06	  2.2551E+04	  3.1234E+03	  1.3070E+04	  3.8669E+02	  1.5323E+05	  2.4621E+07	  3.4742E+02	0.000
+2020	11	  2.8587E+03	  2.9047E+03	  1.1314E+04	  2.8700E+06	  4.8904E+03	  5.9151E+02	  2.1227E+03	  7.9864E+01	  4.9366E+04	  7.7787E+06	  1.0861E+02	0.000
+2020	12	  1.1287E+03	  1.1503E+03	  3.1667E+03	  1.3257E+06	  1.7785E+03	  2.1460E+02	  6.4739E+02	  2.7359E+01	  2.2744E+04	  3.2989E+06	  4.4674E+01	0.000
+2021	1	  1.7596E+03	  1.7954E+03	  4.2100E+03	  2.1864E+06	  2.6781E+03	  2.8900E+02	  8.2547E+02	  4.0161E+01	  3.7480E+04	  5.4982E+06	  7.4891E+01	0.000
+2021	2	  5.9037E+03	  5.9992E+03	  2.3667E+04	  5.8734E+06	  1.0095E+04	  1.1342E+03	  4.2505E+03	  1.6364E+02	  1.0230E+05	  1.5309E+07	  2.1202E+02	0.000
+2021	3	  2.1403E+04	  2.1659E+04	  1.2363E+05	  1.6044E+07	  4.1059E+04	  5.5047E+03	  2.3385E+04	  7.0023E+02	  2.8382E+05	  4.2746E+07	  5.9453E+02	0.000
+2021	4	  4.3846E+04	  4.4283E+04	  2.8501E+05	  2.7803E+07	  8.8477E+04	  1.3532E+04	  5.7291E+04	  1.5404E+03	  4.9675E+05	  7.5008E+07	  1.0435E+03	0.000
+2021	5	  8.1307E+04	  8.1939E+04	  5.7411E+05	  4.0457E+07	  1.7235E+05	  3.1671E+04	  1.2643E+05	  3.0626E+03	  7.4688E+05	  1.0853E+08	  1.5094E+03	0.000
+2021	6	  1.0944E+05	  1.1014E+05	  7.9207E+05	  4.5194E+07	  2.3771E+05	  4.9963E+04	  1.8663E+05	  4.2899E+03	  8.6212E+05	  1.2038E+08	  1.6742E+03	0.000
+2021	7	  1.0578E+05	  1.0647E+05	  7.6569E+05	  4.3738E+07	  2.2976E+05	  4.8274E+04	  1.8037E+05	  4.1463E+03	  8.3388E+05	  1.1692E+08	  1.6276E+03	0.000
+2021	8	  6.9775E+04	  7.0298E+04	  4.9804E+05	  3.3536E+07	  1.4887E+05	  2.7878E+04	  1.1078E+05	  2.6501E+03	  6.2213E+05	  9.0914E+07	  1.2692E+03	0.000
+2021	9	  3.8976E+04	  3.9284E+04	  2.7341E+05	  1.9727E+07	  8.2386E+04	  1.5084E+04	  6.0092E+04	  1.4613E+03	  3.6307E+05	  5.4550E+07	  7.6648E+02	0.000
+2021	10	  1.2687E+04	  1.2829E+04	  7.6479E+04	  9.0395E+06	  2.4790E+04	  3.5450E+03	  1.4870E+04	  4.2717E+02	  1.5927E+05	  2.5461E+07	  3.5952E+02	0.000
+2021	11	  2.8698E+03	  2.9175E+03	  1.0812E+04	  2.9712E+06	  4.8427E+03	  5.6879E+02	  2.0104E+03	  7.8529E+01	  5.0946E+04	  8.0679E+06	  1.1261E+02	0.000
+2021	12	  1.0611E+03	  1.0827E+03	  2.5717E+03	  1.3295E+06	  1.6157E+03	  1.8547E+02	  5.2740E+02	  2.4116E+01	  2.2679E+04	  3.2943E+06	  4.4412E+01	0.000
