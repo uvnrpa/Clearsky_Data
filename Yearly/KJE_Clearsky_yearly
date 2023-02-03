@@ -2,7 +2,7 @@
 % The station is drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
 % All units except PAR: J/m^2. Units PAR: mol/m^2
 % Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
-% E-mail: Bjorn.Johnsen@dsa.no
+% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 03-Feb-2023 11:16:05
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -27,4 +27,5 @@
 % Columns: Year	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
 2019	  4.8500E+05	  4.8889E+05	  3.3546E+06	  2.4780E+08	  1.0212E+06	  1.8952E+05	  7.4377E+05	  1.8128E+04	  4.5653E+06	  6.6645E+08	  9.2840E+03	0.000
 2020	  4.9645E+05	  5.0034E+05	  3.4505E+06	  2.4801E+08	  1.0491E+06	  1.9792E+05	  7.7131E+05	  1.8658E+04	  4.5855E+06	  6.6702E+08	  9.2945E+03	0.000
-2021	  4.9481E+05	  4.9870E+05	  3.4297E+06	  2.4790E+08	  1.0446E+06	  1.9763E+05	  7.6747E+05	  1.8584E+04	  4.5813E+06	  6.6667E+08	  9.2884E+03	0.000
+2021	  4.9555E+05	  4.9944E+05	  3.4368E+06	  2.4792E+08	  1.0465E+06	  1.9807E+05	  7.6919E+05	  1.8619E+04	  4.5827E+06	  6.6673E+08	  9.2895E+03	0.000
+2022	  4.8933E+05	  4.9322E+05	  3.3910E+06	  2.4786E+08	  1.0317E+06	  1.9273E+05	  7.5420E+05	  1.8329E+04	  4.5726E+06	  6.6659E+08	  9.2868E+03	0.000

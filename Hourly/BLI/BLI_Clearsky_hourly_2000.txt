@@ -1,8 +1,8 @@
 % Station Blindern, Clear sky modelled hourly (UTC hour +/- 30 minutes) irradiances. Last column (0)indicates that all data are model based, homogenized to real sky measurements.
-% The station is drifted by the University of Oslo (email: arne.dahlback@fys.uio.no)
+% The station was drifted by the University of Oslo in the period 1995-2019 (email: arne.dahlback@fys.uio.no). Instrument was moved to Kjeller in 2019, and is now drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
 % All units except PAR: W/m^2. Units PAR: mol/s/m^2
 % Calculations and calibrations: Bjørn Johnsen, Statens strålevern (Norwegian Radiation Protection Authority
-% E-mail: Bjorn.Johnsen@dsa.no
+% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 03-Feb-2023 11:12:20
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
