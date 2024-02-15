@@ -2,7 +2,7 @@
 % The station is drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
 % All units except PAR: J/m^2. Units PAR: mol/m^2
 % Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
-% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 03-Feb-2023 11:16:05
+% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 15-Feb-2024 12:02:26
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -18,7 +18,7 @@
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
 % Radiative transfer model: libRadtran release 1.7. http://www.libradtran.org/doku.php. C. Emde, R. Buras-Schnell, A. Kylling, B. Mayer, J. Gasteiger, U. Hamann, J. Kylling, B. Richter, C. Pause, T. Dowling, and L. Bugliaro. The libradtran software package for radiative transfer calculations (version 2.0.1). Geoscientific Model Development, 9(5):1647-1672, 2016
-% Ozone data: EP Toms and AURA OMI. Gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
+% Ozone data: EP Toms and AURA OMI, and in 1995-1996 (satellite data missing): Dobson stations Vindeln, Sodankylã and Oslo (https://woudc.org/archive/Summaries/TotalOzone/Daily_Summary/). Remaining gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
 % Ozone satellite data: Daily gridded Level-3 dataproducts (L3_ozone_epc_YYYYMMDD.txt, L3_ozone_omi_YYYYMMDD.txt). 1996-2004: ftp://toms.gsfc.nasa.gov. 2004->: https://ozonewatch.gsfc.nasa.gov/data/omi
 % Modelled data corrected for climatological combined albedo and aerosol influence, based on clear sky UVI measurements
 % Dose products other than UVI corrected for the wavelength dependendent influence of seasonal albedo
@@ -29,3 +29,4 @@
 2020	  4.9645E+05	  5.0034E+05	  3.4505E+06	  2.4801E+08	  1.0491E+06	  1.9792E+05	  7.7131E+05	  1.8658E+04	  4.5855E+06	  6.6702E+08	  9.2945E+03	0.000
 2021	  4.9555E+05	  4.9944E+05	  3.4368E+06	  2.4792E+08	  1.0465E+06	  1.9807E+05	  7.6919E+05	  1.8619E+04	  4.5827E+06	  6.6673E+08	  9.2895E+03	0.000
 2022	  4.8933E+05	  4.9322E+05	  3.3910E+06	  2.4786E+08	  1.0317E+06	  1.9273E+05	  7.5420E+05	  1.8329E+04	  4.5726E+06	  6.6659E+08	  9.2868E+03	0.000
+2023	  4.8757E+05	  4.9146E+05	  3.3815E+06	  2.4774E+08	  1.0272E+06	  1.9043E+05	  7.4928E+05	  1.8238E+04	  4.5678E+06	  6.6633E+08	  9.2836E+03	0.000

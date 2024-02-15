@@ -2,7 +2,7 @@
 % The station is drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
 % All units except PAR: J/m^2. Units PAR: mol/m^2
 % Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
-% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 03-Feb-2023 11:14:31
+% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 15-Feb-2024 12:00:46
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -18,22 +18,22 @@
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
 % Radiative transfer model: libRadtran release 1.7. http://www.libradtran.org/doku.php. C. Emde, R. Buras-Schnell, A. Kylling, B. Mayer, J. Gasteiger, U. Hamann, J. Kylling, B. Richter, C. Pause, T. Dowling, and L. Bugliaro. The libradtran software package for radiative transfer calculations (version 2.0.1). Geoscientific Model Development, 9(5):1647-1672, 2016
-% Ozone data: EP Toms and AURA OMI. Gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
+% Ozone data: EP Toms and AURA OMI, and in 1995-1996 (satellite data missing): Dobson stations Vindeln, Sodankylã and Oslo (https://woudc.org/archive/Summaries/TotalOzone/Daily_Summary/). Remaining gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
 % Ozone satellite data: Daily gridded Level-3 dataproducts (L3_ozone_epc_YYYYMMDD.txt, L3_ozone_omi_YYYYMMDD.txt). 1996-2004: ftp://toms.gsfc.nasa.gov. 2004->: https://ozonewatch.gsfc.nasa.gov/data/omi
 % Modelled data corrected for climatological combined albedo and aerosol influence, based on clear sky UVI measurements
 % Dose products other than UVI corrected for the wavelength dependendent influence of seasonal albedo
 % Dose products homogenized with clear sky measurement data
 %
 % Columns: Year	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
-1995	  2.6393E+05	  2.6698E+05	  1.5540E+06	  1.9058E+08	  5.1174E+05	  7.2052E+04	  3.0241E+05	  8.7493E+03	  3.3944E+06	  5.0482E+08	  7.0234E+03	0.000
-1996	  2.6534E+05	  2.6839E+05	  1.5683E+06	  1.9069E+08	  5.1513E+05	  7.2436E+04	  3.0476E+05	  8.8123E+03	  3.3985E+06	  5.0527E+08	  7.0321E+03	0.000
+1995	  2.7868E+05	  2.8173E+05	  1.6941E+06	  1.9050E+08	  5.4674E+05	  7.9828E+04	  3.3493E+05	  9.4056E+03	  3.4138E+06	  5.0475E+08	  7.0285E+03	0.000
+1996	  2.7224E+05	  2.7529E+05	  1.6327E+06	  1.9040E+08	  5.3068E+05	  7.5880E+04	  3.1944E+05	  9.1101E+03	  3.4030E+06	  5.0454E+08	  7.0245E+03	0.000
 1997	  2.7687E+05	  2.7992E+05	  1.6813E+06	  1.9099E+08	  5.4382E+05	  7.8825E+04	  3.3112E+05	  9.3414E+03	  3.4202E+06	  5.0615E+08	  7.0493E+03	0.000
 1998	  2.5764E+05	  2.6069E+05	  1.4900E+06	  1.9039E+08	  4.9601E+05	  6.8841E+04	  2.8822E+05	  8.4609E+03	  3.3823E+06	  5.0429E+08	  7.0130E+03	0.000
 1999	  2.6544E+05	  2.6849E+05	  1.5684E+06	  1.9051E+08	  5.1574E+05	  7.3389E+04	  3.0719E+05	  8.8200E+03	  3.3953E+06	  5.0446E+08	  7.0164E+03	0.000
 2000	  2.6906E+05	  2.7211E+05	  1.6055E+06	  1.9074E+08	  5.2453E+05	  7.4683E+04	  3.1389E+05	  8.9845E+03	  3.4046E+06	  5.0534E+08	  7.0336E+03	0.000
 2001	  2.6230E+05	  2.6535E+05	  1.5386E+06	  1.9049E+08	  5.0780E+05	  7.1328E+04	  2.9922E+05	  8.6749E+03	  3.3904E+06	  5.0445E+08	  7.0162E+03	0.000
 2002	  2.6885E+05	  2.7190E+05	  1.6021E+06	  1.9070E+08	  5.2403E+05	  7.4805E+04	  3.1379E+05	  8.9751E+03	  3.4036E+06	  5.0520E+08	  7.0307E+03	0.000
-2003	  2.6269E+05	  2.6574E+05	  1.5407E+06	  1.9052E+08	  5.0868E+05	  7.1589E+04	  2.9995E+05	  8.6930E+03	  3.3916E+06	  5.0464E+08	  7.0198E+03	0.000
+2003	  2.6269E+05	  2.6574E+05	  1.5376E+06	  1.9007E+08	  5.0708E+05	  7.1164E+04	  2.9863E+05	  8.6750E+03	  3.3836E+06	  5.0349E+08	  7.0040E+03	0.000
 2004	  2.7790E+05	  2.8095E+05	  1.6883E+06	  1.9094E+08	  5.4645E+05	  8.0084E+04	  3.3462E+05	  9.3924E+03	  3.4208E+06	  5.0598E+08	  7.0461E+03	0.000
 2005	  2.7135E+05	  2.7440E+05	  1.6253E+06	  1.9073E+08	  5.3030E+05	  7.6511E+04	  3.2014E+05	  9.0914E+03	  3.4076E+06	  5.0526E+08	  7.0320E+03	0.000
 2006	  2.6451E+05	  2.6756E+05	  1.5599E+06	  1.9057E+08	  5.1323E+05	  7.2467E+04	  3.0399E+05	  8.7767E+03	  3.3951E+06	  5.0479E+08	  7.0228E+03	0.000
@@ -53,3 +53,4 @@
 2020	  2.8563E+05	  2.8869E+05	  1.7669E+06	  1.9120E+08	  5.6572E+05	  8.3840E+04	  3.5164E+05	  9.7442E+03	  3.4362E+06	  5.0673E+08	  7.0606E+03	0.000
 2021	  2.6730E+05	  2.7035E+05	  1.5869E+06	  1.9067E+08	  5.2013E+05	  7.3917E+04	  3.1013E+05	  8.9038E+03	  3.4008E+06	  5.0510E+08	  7.0288E+03	0.000
 2022	  2.7527E+05	  2.7832E+05	  1.6620E+06	  1.9080E+08	  5.4007E+05	  7.8941E+04	  3.2948E+05	  9.2713E+03	  3.4144E+06	  5.0541E+08	  7.0350E+03	0.000
+2023	  2.7365E+05	  2.7671E+05	  1.6453E+06	  1.9033E+08	  5.3439E+05	  7.7315E+04	  3.2403E+05	  9.1781E+03	  3.4036E+06	  5.0416E+08	  7.0172E+03	0.000

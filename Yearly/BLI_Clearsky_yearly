@@ -2,7 +2,7 @@
 % The station was drifted by the University of Oslo in the period 1995-2019 (email: arne.dahlback@fys.uio.no). Instrument was moved to Kjeller in 2019, and is now drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
 % All units except PAR: J/m^2. Units PAR: mol/m^2
 % Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
-% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 03-Feb-2023 11:12:35
+% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 15-Feb-2024 11:58:44
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -18,15 +18,15 @@
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
 % Radiative transfer model: libRadtran release 1.7. http://www.libradtran.org/doku.php. C. Emde, R. Buras-Schnell, A. Kylling, B. Mayer, J. Gasteiger, U. Hamann, J. Kylling, B. Richter, C. Pause, T. Dowling, and L. Bugliaro. The libradtran software package for radiative transfer calculations (version 2.0.1). Geoscientific Model Development, 9(5):1647-1672, 2016
-% Ozone data: EP Toms and AURA OMI. Gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
+% Ozone data: EP Toms and AURA OMI, and in 1995-1996 (satellite data missing): Dobson stations Vindeln, Sodankylã and Oslo (https://woudc.org/archive/Summaries/TotalOzone/Daily_Summary/). Remaining gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
 % Ozone satellite data: Daily gridded Level-3 dataproducts (L3_ozone_epc_YYYYMMDD.txt, L3_ozone_omi_YYYYMMDD.txt). 1996-2004: ftp://toms.gsfc.nasa.gov. 2004->: https://ozonewatch.gsfc.nasa.gov/data/omi
 % Modelled data corrected for climatological combined albedo and aerosol influence, based on clear sky UVI measurements
 % Dose products other than UVI corrected for the wavelength dependendent influence of seasonal albedo
 % Dose products homogenized with clear sky measurement data
 %
 % Columns: Year	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
-1995	  4.9302E+05	  4.9691E+05	  3.4164E+06	  2.4818E+08	  1.0401E+06	  1.9567E+05	  7.6214E+05	  1.8496E+04	  4.5832E+06	  6.6747E+08	  9.3002E+03	0.000
-1996	  4.8823E+05	  4.9212E+05	  3.3975E+06	  2.4829E+08	  1.0295E+06	  1.8953E+05	  7.4982E+05	  1.8267E+04	  4.5777E+06	  6.6786E+08	  9.3072E+03	0.000
+1995	  5.1317E+05	  5.1707E+05	  3.5802E+06	  2.4829E+08	  1.0884E+06	  2.1090E+05	  8.1030E+05	  1.9425E+04	  4.6143E+06	  6.6771E+08	  9.3072E+03	0.000
+1996	  5.0397E+05	  5.0786E+05	  3.5280E+06	  2.4837E+08	  1.0673E+06	  2.0096E+05	  7.8729E+05	  1.8990E+04	  4.6018E+06	  6.6804E+08	  9.3130E+03	0.000
 1997	  5.0277E+05	  5.0667E+05	  3.5083E+06	  2.4836E+08	  1.0645E+06	  2.0174E+05	  7.8577E+05	  1.8946E+04	  4.6002E+06	  6.6793E+08	  9.3094E+03	0.000
 1998	  4.5787E+05	  4.6176E+05	  3.1312E+06	  2.4774E+08	  9.5493E+05	  1.6856E+05	  6.7707E+05	  1.6862E+04	  4.5244E+06	  6.6635E+08	  9.2780E+03	0.000
 1999	  4.7992E+05	  4.8381E+05	  3.3105E+06	  2.4796E+08	  1.0086E+06	  1.8573E+05	  7.3137E+05	  1.7888E+04	  4.5603E+06	  6.6680E+08	  9.2871E+03	0.000
@@ -53,3 +53,4 @@
 2020	  4.9735E+05	  5.0124E+05	  3.4574E+06	  2.4828E+08	  1.0511E+06	  1.9839E+05	  7.7302E+05	  1.8695E+04	  4.5909E+06	  6.6766E+08	  9.3034E+03	0.000
 2021	  4.9570E+05	  4.9959E+05	  3.4366E+06	  2.4816E+08	  1.0466E+06	  1.9808E+05	  7.6914E+05	  1.8621E+04	  4.5867E+06	  6.6732E+08	  9.2973E+03	0.000
 2022	  4.9043E+05	  4.9432E+05	  3.3994E+06	  2.4813E+08	  1.0342E+06	  1.9338E+05	  7.5640E+05	  1.8375E+04	  4.5784E+06	  6.6724E+08	  9.2958E+03	0.000
+2023	  4.8865E+05	  4.9254E+05	  3.3898E+06	  2.4801E+08	  1.0297E+06	  1.9104E+05	  7.5142E+05	  1.8284E+04	  4.5735E+06	  6.6698E+08	  9.2926E+03	0.000

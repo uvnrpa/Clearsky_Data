@@ -2,7 +2,7 @@
 % The station is drifted by DSA (former NRPA) - Norwegian Authority of Radiation and Nuclear Safety (email: Bjorn.Johnsen@dsa.no)
 % All units except PAR: J/m^2. Units PAR: mol/m^2
 % Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
-% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 03-Feb-2023 11:13:13
+% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 15-Feb-2024 11:59:25
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -18,15 +18,15 @@
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
 % Radiative transfer model: libRadtran release 1.7. http://www.libradtran.org/doku.php. C. Emde, R. Buras-Schnell, A. Kylling, B. Mayer, J. Gasteiger, U. Hamann, J. Kylling, B. Richter, C. Pause, T. Dowling, and L. Bugliaro. The libradtran software package for radiative transfer calculations (version 2.0.1). Geoscientific Model Development, 9(5):1647-1672, 2016
-% Ozone data: EP Toms and AURA OMI. Gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
+% Ozone data: EP Toms and AURA OMI, and in 1995-1996 (satellite data missing): Dobson stations Vindeln, Sodankylã and Oslo (https://woudc.org/archive/Summaries/TotalOzone/Daily_Summary/). Remaining gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
 % Ozone satellite data: Daily gridded Level-3 dataproducts (L3_ozone_epc_YYYYMMDD.txt, L3_ozone_omi_YYYYMMDD.txt). 1996-2004: ftp://toms.gsfc.nasa.gov. 2004->: https://ozonewatch.gsfc.nasa.gov/data/omi
 % Modelled data corrected for climatological combined albedo and aerosol influence, based on clear sky UVI measurements
 % Dose products other than UVI corrected for the wavelength dependendent influence of seasonal albedo
 % Dose products homogenized with clear sky measurement data
 %
 % Columns: Year	CIE1987	CIE1998	UVB	UVA	NMSC	DNA	VITD	ANCHOVY	FLINTPLANT	HEP	PAR	Fraction [rel. units]
-1995	  4.0853E+05	  4.1213E+05	  2.7602E+06	  2.2932E+08	  8.4634E+05	  1.4612E+05	  5.9093E+05	  1.4899E+04	  4.1625E+06	  6.2093E+08	  8.6564E+03	0.000
-1996	  4.2681E+05	  4.3041E+05	  2.9318E+06	  2.2977E+08	  8.9157E+05	  1.5726E+05	  6.3355E+05	  1.5743E+04	  4.1964E+06	  6.2233E+08	  8.6837E+03	0.000
+1995	  4.2959E+05	  4.3319E+05	  2.9380E+06	  2.2951E+08	  8.9730E+05	  1.6127E+05	  6.4124E+05	  1.5870E+04	  4.1962E+06	  6.2143E+08	  8.6681E+03	0.000
+1996	  4.3802E+05	  4.4162E+05	  3.0264E+06	  2.2980E+08	  9.1852E+05	  1.6524E+05	  6.6034E+05	  1.6257E+04	  4.2130E+06	  6.2234E+08	  8.6857E+03	0.000
 1997	  4.4341E+05	  4.4701E+05	  3.0590E+06	  2.2986E+08	  9.3169E+05	  1.7113E+05	  6.7486E+05	  1.6516E+04	  4.2222E+06	  6.2239E+08	  8.6852E+03	0.000
 1998	  4.0423E+05	  4.0783E+05	  2.7219E+06	  2.2925E+08	  8.3563E+05	  1.4319E+05	  5.8029E+05	  1.4700E+04	  4.1552E+06	  6.2078E+08	  8.6533E+03	0.000
 1999	  4.2054E+05	  4.2414E+05	  2.8588E+06	  2.2944E+08	  8.7560E+05	  1.5537E+05	  6.2041E+05	  1.5457E+04	  4.1820E+06	  6.2119E+08	  8.6616E+03	0.000
@@ -53,3 +53,4 @@
 2020	  4.3873E+05	  4.4233E+05	  3.0157E+06	  2.2977E+08	  9.2007E+05	  1.6819E+05	  6.6381E+05	  1.6300E+04	  4.2139E+06	  6.2210E+08	  8.6793E+03	0.000
 2021	  4.3769E+05	  4.4129E+05	  3.0010E+06	  2.2968E+08	  9.1729E+05	  1.6821E+05	  6.6165E+05	  1.6253E+04	  4.2111E+06	  6.2182E+08	  8.6740E+03	0.000
 2022	  4.2807E+05	  4.3167E+05	  2.9251E+06	  2.2958E+08	  8.9404E+05	  1.6052E+05	  6.3817E+05	  1.5806E+04	  4.1953E+06	  6.2158E+08	  8.6693E+03	0.000
+2023	  4.3190E+05	  4.3550E+05	  2.9604E+06	  2.2954E+08	  9.0316E+05	  1.6268E+05	  6.4702E+05	  1.5977E+04	  4.2000E+06	  6.2151E+08	  8.6698E+03	0.000

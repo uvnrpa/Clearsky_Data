@@ -2,7 +2,7 @@
 % The station is drifted by NILU - Norwegian Institute for Air Research (email: tove.svendby@nilu.no)
 % All units except PAR: J/m^2. Units PAR: mol/m^2
 % Calculations and calibrations: Bjørn Johnsen, Norwegian Authority of Radiation and Nuclear Safety
-% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 03-Feb-2023 11:16:05
+% E-mail: Bjorn.Johnsen@dsa.no	Date of processing: 15-Feb-2024 12:02:26
 %
 % Actionspectra:
 % CIE1987: Erythema action spectrum: A.F. McKinlay, A.F. and B.L. Diffey, A reference action spectrum for ultraviolet induced erythema in human skin", CIE Research Note, 6(1), 17-22, 1987
@@ -18,7 +18,7 @@
 % PAR: Photosynthetic active radiation, 400-700 nm
 %
 % Radiative transfer model: libRadtran release 1.7. http://www.libradtran.org/doku.php. C. Emde, R. Buras-Schnell, A. Kylling, B. Mayer, J. Gasteiger, U. Hamann, J. Kylling, B. Richter, C. Pause, T. Dowling, and L. Bugliaro. The libradtran software package for radiative transfer calculations (version 2.0.1). Geoscientific Model Development, 9(5):1647-1672, 2016
-% Ozone data: EP Toms and AURA OMI. Gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
+% Ozone data: EP Toms and AURA OMI, and in 1995-1996 (satellite data missing): Dobson stations Vindeln, Sodankylã and Oslo (https://woudc.org/archive/Summaries/TotalOzone/Daily_Summary/). Remaining gaps are substituted with O3 retrieved from GUV measurements. Where also GUV O3 is missing, gaps are filled with seasonal mean of total O3 for Oslo, period 1979-1990. Seasonal data provided by A. Dahlback.
 % Ozone satellite data: Daily gridded Level-3 dataproducts (L3_ozone_epc_YYYYMMDD.txt, L3_ozone_omi_YYYYMMDD.txt). 1996-2004: ftp://toms.gsfc.nasa.gov. 2004->: https://ozonewatch.gsfc.nasa.gov/data/omi
 % Modelled data corrected for climatological combined albedo and aerosol influence, based on clear sky UVI measurements
 % Dose products other than UVI corrected for the wavelength dependendent influence of seasonal albedo
@@ -73,3 +73,15 @@
 2022	10	  1.2106E+04	  1.2248E+04	  7.0591E+04	  9.0231E+06	  2.3339E+04	  3.2345E+03	  1.3540E+04	  4.0035E+02	  1.5816E+05	  2.5407E+07	  3.5846E+02	0.000
 2022	11	  2.8717E+03	  2.9193E+03	  1.0844E+04	  2.9708E+06	  4.8486E+03	  5.7127E+02	  2.0204E+03	  7.8621E+01	  5.0939E+04	  8.0652E+06	  1.1255E+02	0.000
 2022	12	  1.0402E+03	  1.0618E+03	  2.4265E+03	  1.3269E+06	  1.5689E+03	  1.7848E+02	  4.9825E+02	  2.3186E+01	  2.2594E+04	  3.2792E+06	  4.4116E+01	0.000
+2023	1	  1.9008E+03	  1.9368E+03	  5.5453E+03	  2.1886E+06	  2.9984E+03	  3.3563E+02	  1.0604E+03	  4.6398E+01	  3.7732E+04	  5.5198E+06	  7.5430E+01	0.000
+2023	2	  6.8325E+03	  6.9285E+03	  3.2981E+04	  5.8948E+06	  1.2308E+04	  1.5264E+03	  6.0871E+03	  2.0530E+02	  1.0401E+05	  1.5407E+07	  2.1425E+02	0.000
+2023	3	  2.0093E+04	  2.0348E+04	  1.0990E+05	  1.5964E+07	  3.7684E+04	  4.8525E+03	  2.0435E+04	  6.3885E+02	  2.8057E+05	  4.2508E+07	  5.9036E+02	0.000
+2023	4	  4.7814E+04	  4.8252E+04	  3.2225E+05	  2.7866E+07	  9.8277E+04	  1.5964E+04	  6.6690E+04	  1.7227E+03	  5.0348E+05	  7.5179E+07	  1.0471E+03	0.000
+2023	5	  8.3324E+04	  8.3957E+04	  5.9247E+05	  4.0484E+07	  1.7732E+05	  3.2972E+04	  1.3128E+05	  3.1554E+03	  7.5023E+05	  1.0860E+08	  1.5109E+03	0.000
+2023	6	  1.0387E+05	  1.0457E+05	  7.4900E+05	  4.5128E+07	  2.2430E+05	  4.5375E+04	  1.7312E+05	  4.0299E+03	  8.5282E+05	  1.2022E+08	  1.6712E+03	0.000
+2023	7	  9.4117E+04	  9.4799E+04	  6.7451E+05	  4.3605E+07	  2.0168E+05	  3.8834E+04	  1.5211E+05	  3.6029E+03	  8.1453E+05	  1.1660E+08	  1.6214E+03	0.000
+2023	8	  7.4357E+04	  7.4881E+04	  5.3459E+05	  3.3582E+07	  1.5991E+05	  3.1457E+04	  1.2185E+05	  2.8625E+03	  6.2958E+05	  9.1026E+07	  1.2715E+03	0.000
+2023	9	  3.8569E+04	  3.8877E+04	  2.6998E+05	  1.9715E+07	  8.1336E+04	  1.4748E+04	  5.9017E+04	  1.4418E+03	  3.6225E+05	  5.4519E+07	  7.6600E+02	0.000
+2023	10	  1.2827E+04	  1.2970E+04	  7.7624E+04	  9.0301E+06	  2.5115E+04	  3.6455E+03	  1.5232E+04	  4.3331E+02	  1.5930E+05	  2.5427E+07	  3.5899E+02	0.000
+2023	11	  2.7576E+03	  2.8051E+03	  9.7065E+03	  2.9580E+06	  4.5606E+03	  5.2220E+02	  1.7992E+03	  7.3262E+01	  5.0551E+04	  8.0196E+06	  1.1174E+02	0.000
+2023	12	  1.1085E+03	  1.1303E+03	  2.9447E+03	  1.3299E+06	  1.7173E+03	  2.0226E+02	  5.9966E+02	  2.6179E+01	  2.2764E+04	  3.3068E+06	  4.4720E+01	0.000
